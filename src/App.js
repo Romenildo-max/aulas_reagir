@@ -18,6 +18,7 @@ function App() { //isto é um compoment do react
           Learn React
         </a>
       </header>
+      
     </div>
   );
 }
