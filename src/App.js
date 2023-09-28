@@ -1,13 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
 
-function App() { //isto é um compoment do react
-  return ( //a utilização de () no return é porque estamos retornando mais de um linha(mais de uma coisa)
+class App extends Component { //podemos ter components de class ou de função
+  constructor(props) {
+    super();
+    this.state= {
+      name: 'Otavio Miranda'
+    };
+    
+  }
+
+  render() {
+    //const name = this.state.name;
+    const { name } = this.state; //isso que é destructury, mesma coisa de exemplo acima para atribuição
+
+    return ( //a utilização de () no return é porque estamos retornando mais de um linha(mais de uma coisa)
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {name}
         </p>
         <a
           className="App-link"
@@ -18,9 +31,15 @@ function App() { //isto é um compoment do react
           Learn React
         </a>
       </header>
-      
     </div>
   );
+  }
 }
+
+/*
+function App() { //isto é um compoment do react
+  
+}
+*/
 
 export default App;
