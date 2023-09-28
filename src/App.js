@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
+function App() { //isto é um compoment do react
+  return ( //a utilização de () no return é porque estamos retornando mais de um linha(mais de uma coisa)
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
