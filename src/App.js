@@ -7,8 +7,11 @@ class App extends Component { //podemos ter components de class ou de função
     super();
     this.state= {
       name: 'Otavio Miranda'
-    };
-    
+    };  
+  }
+
+  handlePClick() { //metodo da class App
+    console.log('<p> clicado')
   }
 
   render() {
@@ -19,7 +22,7 @@ class App extends Component { //podemos ter components de class ou de função
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p onClick={this.handlePClick}>
           {name}
         </p>
         <a
