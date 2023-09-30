@@ -65,4 +65,8 @@ componentDidUpdate() { é invocado imediatemente após alguma atualização ocor
     Use isto coo uma oportunidade para alterar o DOM quando o componente for atualizado
 }
 
+//////////////////////////////// Components ///////////////////
+
+//components react é simplimente uma class que tem um metodo RENDER que retorna JSX ou uma função que retorna JSX tambem tem o metodo RENDER
+
 */
