@@ -3,6 +3,8 @@
 //Props(propriedades) -> atributos, que vai ser definido no import do arquivo ai vai vim para o export com PROPS, para pode recuperar valores do DOM ou manipula-los
 //colocando os atributos -> props(cover, id, title, body) entre as {} quer dizer que já estamos fazendo o desctrutury da props e não precisar utilizar a palavra props entre ()
 
+import './styles.css';
+
 export const PostCard = ({ title, cover, body, id }) => {
     return(
         <div className="post">
