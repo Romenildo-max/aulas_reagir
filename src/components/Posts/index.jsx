@@ -1,4 +1,4 @@
-//posts entre as {} é a props
+
 import './styles.css';
 
 import { PostCard } from "../PostaCard"
